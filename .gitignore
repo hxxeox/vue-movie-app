@@ -1,8 +1,8 @@
-.cache/
-.idea/
-.DS_Store/
-node_modules/
-dist/
+.cache
+.idea
+.DS_Store
+node_modules
+dist
 .env
-# Local Netlify folder
 .netlify
+.gitignore
