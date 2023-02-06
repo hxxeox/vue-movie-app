@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "dev:netlify": "netlify dev",
+    "dev:webpack": "webpack-dev-server --mode development",
+    "dev": "netlify dev",
     "build": "webpack --mode production",
-    "lint":"eslint --fix --ext .js,.vue"
+    "lint": "eslint --fix --ext .js,.vue"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "babel-loader": "^9.1.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
+    "dotenv-webpack": "^8.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "netlify-cli": "^12.10.0",

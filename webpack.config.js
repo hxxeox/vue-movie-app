@@ -5,6 +5,8 @@ const path = require('path')
 const HtmlPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
+const Dotenv = require('dotenv-webpack')
+
 // export
 module.exports = {
     //파일을 읽어들이기 시작하는 진입점 설정
@@ -75,9 +77,13 @@ module.exports = {
                 // 아래에 다른 여러개의 경로도 설정이 가능하다.
             ]
         }),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new Dotenv()
     ],
+    // 개발서버 옵션
     devServer: {
-        host:'localhost'
+        host:'localhost',
+        port: 8079,
+        hot:true
     }
 }
